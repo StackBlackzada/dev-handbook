@@ -1,0 +1,46 @@
+name: Sugerir nova ferramenta
+description: Proponha uma ferramenta para entrar no guia
+labels: ["nova-ferramenta"]
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Nome da ferramenta
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link oficial
+    validations:
+      required: true
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria
+      options:
+        - Agentes de IA
+        - APIs e Frameworks de IA
+        - Automação
+        - Hospedagem / Deploy
+        - Banco / Backend
+        - DevOps / CI/CD
+        - Desenvolvimento / Testes
+        - Gestão da empresa
+        - Segurança
+        - Monitoramento
+        - Pagamentos
+        - Outra
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Por que entrar no guia?
+      description: Qual problema resolve? Substitui algo que já temos?
+    validations:
+      required: true
+  - type: input
+    id: preco
+    attributes:
+      label: Custo aproximado
